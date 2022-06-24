@@ -44,5 +44,9 @@ module UD_BCD_Counter(A,B,C,D,x,clk,rst);
     assign JD = ~A | (~B & ~C); // JD = A' + B'C'
     assign KD = D; // KD = D or KD = 1
 
-    // Instantiate JK Flip-Flop
+    // Instantiate JK Flip-Flops
+    JK_FF F3(A,JA,KA,clk,rst);
+    JK_FF F2(B,JB,KB,clk,rst);
+    JK_FF F1(C,JC,KC,clk,rst);
+    JK_FF F0(D,JD,KD,clk,rst);
 endmodule
