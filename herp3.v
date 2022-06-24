@@ -25,10 +25,10 @@ module UD_BCD_Counter(A,B,C,D,x,clk,rst);
     output A,B,C,D;
     input x,clk,rst;
     wire
-        JA,KA, // A JK Flip-Flop
-        JB,KB, // B JK Flip-Flop
-        JC,KC, // C JK Flip-Flop
-        JD,KD; // D JK Flip-Flop
+        JA,KA, // A JK Flip-Flop inputs
+        JB,KB, // B JK Flip-Flop inputs
+        JC,KC, // C JK Flip-Flop inputs
+        JD,KD; // D JK Flip-Flop inputs
     
     // Assign Flip-Flop input equations
     // A JK Flip-Flop
