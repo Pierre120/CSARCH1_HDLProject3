@@ -29,7 +29,7 @@ module BCD_Counter_tb();
         begin
             $display("\nWritten by: Pierre Vincent C. Hernandez");
             $display("Sequential Circuit Specification: up_down BCD counter using JK Flip Flop");
-            $monitor("time=%0d\tclk=%b\trst=%b\tx=%b\tA=%b\tB=%b\tC=%b\tD=%b",$time,t_clk,t_rst,t_x,t_A,t_B,t_C,t_D);
+            $monitor("time=%-9dclk=%b\trst=%b\tx=%b\tA=%b\tB=%b\tC=%b\tD=%b",$time,t_clk,t_rst,t_x,t_A,t_B,t_C,t_D);
             $dumpfile("herp3.vcd");
             $dumpvars;
         end
