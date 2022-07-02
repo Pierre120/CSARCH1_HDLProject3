@@ -22,7 +22,7 @@ module BCD_Counter_tb();
     initial
         begin
             t_x = 1'b0;
-            #105 t_x = 1'b1;
+            #110 t_x = 1'b1;
         end
 
     initial
